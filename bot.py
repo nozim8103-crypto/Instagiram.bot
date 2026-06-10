@@ -5,7 +5,7 @@ from yt_dlp import YoutubeDL
 
 # TOKEN va KANALLAR
 TOKEN = "8870187278:AAFEzsb2UKK6mtaYJmkfmvf1x1xHRIEaBTM"
-CHANNELS = ["@temuzikinsta"]
+CHANNELS = ["@temuzikinsta","@insta_hesh_bot"]
 
 async def is_subscribed(user_id, context):
     for channel in CHANNELS:
