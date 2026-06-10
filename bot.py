@@ -4,7 +4,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from yt_dlp import YoutubeDL
 
 # TOKEN va KANALLAR
-TOKEN = "8870187278:AAFEzsb2UKK6mtaYJmkfmvf1x1xHRIEaBTM"
+TOKEN = "8870187278:AAFlmtdCfPp91MNQUfj-UKjrM-ViGDEhLoU"
 CHANNELS = ["@temuzikinsta","@insta_hesh_bot"]
 
 async def is_subscribed(user_id, context):
