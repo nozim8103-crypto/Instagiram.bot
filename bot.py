@@ -6,7 +6,7 @@ from yt_dlp import YoutubeDL
 
 # Sozlamalar
 TOKEN = "8870187278:AAGqNxIYK1sKADwFzSUlbOsUoeP_s_XuPtw"
-CHANNEL = "@temuzikinsta
+CHANNEL = "@temuzikinsta"
 SECOND_BOT_URL = "https://t.me/insta_hesh_bot"
 
 def extract_hashtags(text):
