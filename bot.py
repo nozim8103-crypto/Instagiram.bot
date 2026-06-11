@@ -3,7 +3,17 @@ from telebot import types
 import yt_dlp
 import os
 import re
+from flask import Flask
+from threading import Thread
 
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot ishlayapti!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
 TOKEN = '8870187278:AAEEe_heDhMy9zzQXpg48xC-zzQjIe5YDbg'
 CHANNEL_ID = '@temuzikinsta' 
 ADMIN_URL = "https://t.me/roziyev2"
@@ -95,4 +105,7 @@ def download_media(message):
     for f in ["video.mp4", "audio.mp3"]:
         if os.path.exists(f): os.remove(f)
 
-bot.polling(none_stop=True)
+if __name__ == "__main__":
+    t = Thread(target=run)
+    t.start()
+    bot.infinity_polling()
