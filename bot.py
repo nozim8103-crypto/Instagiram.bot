@@ -7,7 +7,7 @@ from yt_dlp import YoutubeDL
 # Sozlamalar
 TOKEN = "8870187278:AAEEe_heDhMy9zzQXpg48xC-zzQjIe5YDbg"
 CHANNEL1 = "@temuzikinsta" # Birinchi kanal
-CHANNEL2 = "@username2"    # Ikkinchi kanal (o'zgartiring)
+CHANNEL2 = "@insta_hesh_bot"    # Ikkinchi kanal (o'zgartiring)
 
 def extract_hashtags(text):
     hashtags = re.findall(r"#(\w+)", text)
