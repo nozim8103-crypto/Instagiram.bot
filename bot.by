@@ -7,8 +7,8 @@ import sqlite3
 import yt_dlp
 
 # --- Sozlamalar ---
-API_TOKEN = 'TOKENINGIZNI_SHU_YERGA_YOZING'
-CHANNEL_ID = '@sizning_kanal_username' # Majburiy obuna kanali
+API_TOKEN = '8870187278:AAEEe_heDhMy9zzQXpg48xC-zzQjIe5YDbg'
+CHANNEL_ID = '@insta_aqlli_bot' # Majburiy obuna kanali
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
