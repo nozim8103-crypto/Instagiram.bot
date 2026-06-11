@@ -8,7 +8,7 @@ import yt_dlp
 
 # --- Sozlamalar ---
 API_TOKEN = '8870187278:AAEEe_heDhMy9zzQXpg48xC-zzQjIe5YDbg'
-CHANNEL_ID = '@insta_aqlli_bot' # Majburiy obuna kanali
+CHANNEL_ID = 'https://t.me/temuzikinsta' # Majburiy obuna kanali
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
