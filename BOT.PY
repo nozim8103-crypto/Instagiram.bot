@@ -3,7 +3,7 @@ import yt_dlp
 import os
 from telebot import types
 
-TOKEN = 'TOKENINGIZNI_SHU_YERGA_YOZING'
+TOKEN = '8870187278:AAEEe_heDhMy9zzQXpg48xC-zzQjIe5YDbg'
 bot = telebot.TeleBot(TOKEN)
 
 # 1. Yuklab olish funksiyasi
