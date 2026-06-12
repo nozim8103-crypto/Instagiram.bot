@@ -111,21 +111,8 @@ async def start_extract(message: types.Message):
 async def process_link(message: types.Message, state: FSMContext):
     await message.answer("Yuklanmoqda...")
     try:
-        ydl_opts = {'format': 'best', 'outtmpl': 'video.mp4'}
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(message.text, download=True)
-            caption = info.get('description', 'Video')
-        
-        await message.answer_video(video=open('video.mp4', 'rb'), caption=caption[:1024])
-        
-        hashtags = [w for w in caption.split() if w.startswith('#')]
-        if hashtags: 
-            await message.answer(f"Heshteglar: {' '.join(hashtags)}")
-            
-        if os.path.exists('video.mp4'): os.remove('video.mp4')
-    except Exception as e: 
-        await message.answer("Xatolik! Havolani tekshiring.")
-    await state.finish()
-
-if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+        ydl_opts = {
+            'format': 'best', 
+            'outtmpl': 'video.mp4',
+            'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
